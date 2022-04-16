@@ -8,17 +8,15 @@
     <style type="text/css">
         .auto-style1 {
             width: 100%;
+            height: 69px;
         }
         .color{
             background-color:#eaeaea;
         }
         .auto-style2 {
             background-color: #eaeaea;
-            width: 868px;
+            width: 1016px;
             height: 26px;
-        }
-        .auto-style3 {
-            width: 868px;
         }
         .auto-style4 {
             background-color: #eaeaea;
@@ -49,16 +47,41 @@
             width: 55px;
             height: 26px;
         }
+        .search{
+            border-radius:50px;
+            /* margin-bottom: 40px;*/
+             /*margin-left: 30px;*/
+        }
+        .search-button{
+          border-radius: 50px 50px 50px 50px;
+          background: #58a3da;
+        }
+    
         .auto-style17 {
             background-color: #eaeaea;
-            width: 120px;
+            width: 143px;
             height: 26px;
         }
+        .auto-style18 {
+            width: 100%;
+        }
+    
+        .auto-style19 {
+            width: 328px;
+        }
+        .auto-style21 {
+            width: 471px;
+        }
+    
+        .auto-style22 {
+            height: 52px;
+            background-color:#212121;
+        }
+    
     </style>
 </head>
-<body>
+<body style="height: 189px">
     <form id="form1" runat="server">
-        <div>
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2" rowspan="2">
@@ -90,9 +113,27 @@
                     </td>
                     <td class="auto-style4">&nbsp;</td>
                 </tr>
+                </table>
+        <div>
+            <table class="auto-style18">
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td colspan="6">&nbsp;</td>
+                    <td class="auto-style19">
+                        <asp:Label ID="Label5" runat="server" Font-Names="Arial" Font-Size="90px" Text="Sigma"></asp:Label>
+                    </td>
+                    <td class="auto-style21" colspan="2">
+                        <asp:TextBox ID="TextBox1" runat="server" Font-Names="Arial" Font-Size="X-Large" Height="43px" Width="450px" Class="search" placeholder="Search"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Search" class="search-button" Height="40px" Width="90px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style22" colspan="2"></td>
+                    <td class="auto-style22" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style19">&nbsp;</td>
+                    <td colspan="3">&nbsp;</td>
                 </tr>
             </table>
         </div>
