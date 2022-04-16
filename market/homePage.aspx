@@ -55,30 +55,54 @@
         .search-button{
           border-radius: 50px 50px 50px 50px;
           background: #58a3da;
+          margin-left: 30px;
         }
     
         .auto-style17 {
             background-color: #eaeaea;
             width: 143px;
-            height: 26px;
+            height: 25px;
         }
         .auto-style18 {
             width: 100%;
         }
     
         .auto-style19 {
-            width: 328px;
+            width: 312px;
         }
-        .auto-style21 {
-            width: 471px;
-        }
-    
-        .auto-style22 {
-            height: 52px;
+        .wp{
             background-color:#212121;
         }
-    
-    </style>
+            
+        .auto-style21 {
+            background-color: #212121;
+            width: 132px;
+            height: 44px;
+        }
+        .auto-style22 {
+            background-color: #212121;
+            width: 140px;
+            height: 44px;
+        }
+        .auto-style23 {
+            background-color: #212121;
+            width: 159px;
+            height: 44px;
+        }
+        .auto-style24 {
+            background-color: #212121;
+            width: 312px;
+            height: 44px;
+        }
+        .auto-style25 {
+            height: 18px;
+        }
+        .auto-style26 {
+            background-color: #212121;
+            height: 44px;
+        }
+            
+        </style>
 </head>
 <body style="height: 189px">
     <form id="form1" runat="server">
@@ -118,22 +142,32 @@
             <table class="auto-style18">
                 <tr>
                     <td class="auto-style19">
-                        <asp:Label ID="Label5" runat="server" Font-Names="Arial" Font-Size="90px" Text="Sigma"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Font-Names="Arial" Font-Size="90px" margin-left="20px" Text="Sigma"></asp:Label>
                     </td>
-                    <td class="auto-style21" colspan="2">
+                    <td colspan="5">
                         <asp:TextBox ID="TextBox1" runat="server" Font-Names="Arial" Font-Size="X-Large" Height="43px" Width="450px" Class="search" placeholder="Search"></asp:TextBox>
-                    </td>
-                    <td>
                         <asp:Button ID="Button1" runat="server" Text="Search" class="search-button" Height="40px" Width="90px"/>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style22" colspan="2"></td>
-                    <td class="auto-style22" colspan="2"></td>
+                    <td class="auto-style25" colspan="6">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="auto-style19">&nbsp;</td>
-                    <td colspan="3">&nbsp;</td>
+                    <td class="auto-style24"></td>
+                    <td class="auto-style21">
+                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style22">
+                        <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">Categories</asp:HyperLink>
+                    </td>
+                    <td class="auto-style23">
+                        <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">About Us</asp:HyperLink>
+                    </td>
+                    <td class="auto-style26">
+                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">Contact Us</asp:HyperLink>
+                    </td>
+                    <td class="auto-style26"></td>
                 </tr>
             </table>
         </div>
