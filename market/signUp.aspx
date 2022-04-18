@@ -14,12 +14,17 @@
             align-items: center;
         }
         .layout{
-            border-radius: 25px;
+            border-radius: 13px;
             width: 200px;
             height:36px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .layout:hover {
+             transform: scale(1.1);
+             box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
         }
         .button{
-            border-radius: 25px;
+            border-radius: 15px;
             width:90px;
             height:29px;
             margin-left:60px;
@@ -61,7 +66,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="TxtUserName" runat="server" placeholder=" Name" CssClass="layout" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                        <asp:TextBox ID="TxtName" runat="server" placeholder=" Name" CssClass="layout" Font-Names="Arial" Font-Size="Large" OnTextChanged="TxtUserName_TextChanged" BorderStyle="None"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -73,7 +78,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="TxtEmail" runat="server" placeholder=" E-mail" CssClass="layout" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                        <asp:TextBox ID="TxtEmail" runat="server" placeholder=" E-mail" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -85,7 +90,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="Txtpassword" runat="server" placeholder=" Password" CssClass="layout" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                        <asp:TextBox ID="Txtpassword" runat="server" placeholder=" Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -97,7 +102,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="TxtconfirmPass" runat="server" placeholder=" Confirm Password" CssClass="layout" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                        <asp:TextBox ID="TxtconfirmPass" runat="server" placeholder=" Confirm Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
