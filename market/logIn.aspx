@@ -31,7 +31,15 @@
         .auto-style2 {
             width: 100%;
         }
-    </style>
+        .valid{
+            margin-left:20px;
+        }
+   
+        .expression{
+            margin-left:20px;
+        }
+   
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -64,6 +72,8 @@
                 <td>&nbsp;</td>
                 <td>
                     <asp:TextBox ID="TxtUserName" runat="server" CssClass="frame"  placeholder=" UserName" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="valid" ErrorMessage="UserName Required" ControlToValidate="TxtUserName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="wrong UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtUserName" ValidationExpression="/w{5,10}"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -76,6 +86,8 @@
                 <td>&nbsp;</td>
                 <td>
                     <asp:TextBox ID="TxtPass" runat="server" CssClass="frame"  placeholder=" Password" Font-Names="Arial" Font-Size="Large"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="valid" ErrorMessage="Password Required" ControlToValidate="TxtPass" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" class="expression" ErrorMessage="wrong Password" Font-Names="Arial" ForeColor="Red" ControlToValidate="Txtpass" ValidationExpression="/w{8,12}"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -87,7 +99,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                        <asp:Button ID="submit" runat="server" Text="submit" class="button" Font-Names="Arial" Font-Size="Medium"/>
+                        <asp:Button ID="submit" runat="server" Text="submit" class="button" Font-Names="Arial" Font-Size="Medium" OnClick="submit_Click"/>
                     </td>
                 <td>&nbsp;</td>
             </tr>
@@ -98,7 +110,9 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="gg" runat="server"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

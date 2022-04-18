@@ -140,7 +140,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style13">
-                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Arial">Login</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Arial" NavigateUrl="~/logIn.aspx" Target="_self">Login</asp:HyperLink>
                     </td>
                     <td class="auto-style14">
                         <asp:Label ID="Label3" runat="server" Text="/"></asp:Label>

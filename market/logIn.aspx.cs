@@ -13,5 +13,10 @@ namespace market
         {
 
         }
+
+        protected void submit_Click(object sender, EventArgs e)
+        {
+            gg.Text = "it's work";
+        }
     }
 }
