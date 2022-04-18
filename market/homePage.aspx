@@ -67,9 +67,6 @@
             width: 100%;
         }
     
-        .auto-style19 {
-            width: 312px;
-        }
         .wp{
             background-color:#212121;
         }
@@ -89,17 +86,33 @@
             width: 159px;
             height: 44px;
         }
-        .auto-style24 {
-            background-color: #212121;
-            width: 312px;
-            height: 44px;
-        }
         .auto-style25 {
             height: 18px;
         }
         .auto-style26 {
             background-color: #212121;
             height: 44px;
+        }
+        .style{
+            background-color: white;
+        }
+            
+        .auto-style29 {
+            width: 321px;
+        }
+        .auto-style33 {
+            width: 128px;
+        }
+        .auto-style34 {
+            background-color: #212121;
+            height: 44px;
+            width: 128px;
+        }
+        .auto-style35 {
+            width: 177px;
+        }
+        .auto-style36 {
+            width: 266px;
         }
             
         </style>
@@ -141,7 +154,7 @@
         <div>
             <table class="auto-style18">
                 <tr>
-                    <td class="auto-style19">
+                    <td class="auto-style33">
                         <asp:Label ID="Label5" runat="server" Font-Names="Arial" Font-Size="90px" margin-left="20px" Text="Sigma"></asp:Label>
                     </td>
                     <td colspan="5">
@@ -154,7 +167,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style24"></td>
+                    <td class="auto-style34"></td>
                     <td class="auto-style21">
                         <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">Home</asp:HyperLink>
                     </td>
@@ -168,6 +181,119 @@
                         <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" Font-Names="Arial" ForeColor="White">Contact Us</asp:HyperLink>
                     </td>
                     <td class="auto-style26"></td>
+                </tr>
+                <tr>
+                    <td class="style" colspan="6">
+                        <table class="auto-style18">
+                            <tr>
+                                <td colspan="7">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">
+                                    <asp:ImageButton ID="ImageButton2" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k.jfif" Width="343px" />
+                                </td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">
+                                    <asp:ImageButton ID="ImageButton3" runat="server" Height="209px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k2.jfif" Width="331px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">
+                                    <asp:ImageButton ID="ImageButton4" runat="server" Height="185px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k3.jfif" Width="368px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>
+                                    <asp:ImageButton ID="ImageButton6" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k5.jfif" Width="441px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">
+                                    <asp:ImageButton ID="ImageButton5" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k4.jfif" Width="278px" />
+                                </td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">
+                                    <asp:ImageButton ID="ImageButton7" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k6.jfif" Width="320px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">
+                                    <asp:ImageButton ID="ImageButton8" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k7.jfif" Width="372px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>
+                                    <asp:ImageButton ID="ImageButton9" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\k8.jfif" Width="444px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">
+                                    <asp:ImageButton ID="ImageButton10" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\p.jfif" Width="298px" />
+                                </td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">
+                                    <asp:ImageButton ID="ImageButton11" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\p1.jfif" Width="298px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">
+                                    <asp:ImageButton ID="ImageButton12" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\p2.jfif" Width="383px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>
+                                    <asp:ImageButton ID="ImageButton13" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\m.jfif" Width="298px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">
+                                    <asp:ImageButton ID="ImageButton14" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\m2.jfif" Width="298px" />
+                                </td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">
+                                    <asp:ImageButton ID="ImageButton15" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\m3.jfif" Width="298px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">
+                                    <asp:ImageButton ID="ImageButton16" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\m4.jfif" Width="298px" />
+                                </td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>
+                                    <asp:ImageButton ID="ImageButton17" runat="server" Height="221px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\m5.jfif" Width="306px" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style29">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style36">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td class="auto-style35">&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
             </table>
         </div>
