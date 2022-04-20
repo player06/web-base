@@ -64,7 +64,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Image ID="Image1" runat="server" Height="223px" ImageUrl="C:\Users\Mohab Khaled\source\repos\web-base\market\image\login.png" Width="207px" />
+                        <asp:Image ID="Image1" runat="server" Height="223px" ImageUrl="image\login.png" Width="207px" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -90,7 +90,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="TxtUserName" runat="server" placeholder=" E-mail" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
+                        <asp:TextBox ID="TxtUserName" runat="server" placeholder=" UserName" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" CssClass="valid" ErrorMessage="UserName Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="not valid UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtEmail" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
                     </td>
@@ -119,9 +119,9 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="Txtpassword" runat="server" placeholder=" Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
+                        <asp:TextBox ID="Txtpassword" runat="server" placeholder=" Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" CssClass="valid" ErrorMessage="Password Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" class="expression" ErrorMessage="between 8 - 16 char" Font-Names="Arial" ForeColor="Red" ControlToValidate="Txtpassword" ValidationExpression="/w{8,12}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" class="expression" ErrorMessage="between 8 - 16 char" Font-Names="Arial" ForeColor="Red" ControlToValidate="Txtpassword" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -133,7 +133,7 @@
                 <tr>
                     <td class="auto-style3"></td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TxtconfirmPass" runat="server" placeholder=" Confirm Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
+                        <asp:TextBox ID="TxtconfirmPass" runat="server" placeholder=" Confirm Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" CssClass="valid" ErrorMessage="Confirm Password Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="Txtpassword" ControlToValidate="TxtconfirmPass" ErrorMessage="no match" class="expression" Font-Names="Arial" ForeColor="Red"></asp:CompareValidator>
                     </td>
