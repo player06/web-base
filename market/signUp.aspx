@@ -93,7 +93,7 @@
                     <td>
                         <asp:TextBox ID="TxtUserName" runat="server" placeholder=" UserName" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="TxtUserName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="not valid UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtEmail" ValidationExpression="\w{5,10}\d?"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="not valid UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtUserName" ValidationExpression="\w{5,10}"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>

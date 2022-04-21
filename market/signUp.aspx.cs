@@ -15,12 +15,19 @@ namespace market
 
         }
 
-        protected void submit_Click(object sender, EventArgs e)
-        {
+        protected void submit_Click(object sender, EventArgs e){
             //create connectoin object
             SqlConnection sql = new SqlConnection();
             sql.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True";
+          
+            string insert = string.Format("insert into member('{0}', '{1}', '{2}', '{3}')",TxtName.Text,TxtEmail.Text,TxtUserName.Text,Txtpassword.Text);
+
+            SqlCommand cmd = new SqlCommand(insert,sql);
+            
             sql.Open();
+
+            cmd.ExecuteNonQuery();
+
             sql.Close();
            
         }
