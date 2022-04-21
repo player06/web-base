@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,9 +15,14 @@ namespace market
 
         }
 
-        protected void TxtUserName_TextChanged(object sender, EventArgs e)
+        protected void submit_Click(object sender, EventArgs e)
         {
-
+            //create connectoin object
+            SqlConnection sql = new SqlConnection();
+            sql.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True";
+            sql.Open();
+            sql.Close();
+           
         }
     }
 }

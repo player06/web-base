@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signUp.aspx.cs" Inherits="market.signUp" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -76,8 +77,8 @@
                 <tr>
                     <td class="auto-style3"></td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TxtName" runat="server" placeholder=" Name" CssClass="layout" Font-Names="Arial" Font-Size="Large" OnTextChanged="TxtUserName_TextChanged" BorderStyle="None"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="valid" ErrorMessage="Name Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="TxtName" runat="server" placeholder=" Name" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" class="expression" ErrorMessage="Make sure the first letter capital" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtName" ValidationExpression="([A-Z][a-z]*)|([A-Z][a-z]*\s[A-Z][a-z]*)"></asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style3"></td>
@@ -91,8 +92,8 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="TxtUserName" runat="server" placeholder=" UserName" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" CssClass="valid" ErrorMessage="UserName Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="not valid UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtEmail" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="TxtUserName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" class="expression" ErrorMessage="not valid UserName" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtEmail" ValidationExpression="\w{5,10}\d?"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -103,13 +104,13 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style3">
                         <asp:TextBox ID="TxtEmail" runat="server" placeholder=" E-mail" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" CssClass="valid" ErrorMessage="E-mail Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="TxtEmail" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" class="expression" ErrorMessage="not a valid e-mail" Font-Names="Arial" ForeColor="Red" ControlToValidate="TxtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
@@ -120,7 +121,7 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="Txtpassword" runat="server" placeholder=" Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None" TextMode="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" CssClass="valid" ErrorMessage="Password Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="Txtpassword" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" class="expression" ErrorMessage="between 8 - 16 char" Font-Names="Arial" ForeColor="Red" ControlToValidate="Txtpassword" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
@@ -134,7 +135,7 @@
                     <td class="auto-style3"></td>
                     <td class="auto-style3">
                         <asp:TextBox ID="TxtconfirmPass" runat="server" placeholder=" Confirm Password" CssClass="layout" Font-Names="Arial" Font-Size="Large" BorderStyle="None" TextMode="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" CssClass="valid" ErrorMessage="Confirm Password Required" ControlToValidate="TxtName" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" CssClass="valid" ErrorMessage="*" ControlToValidate="TxtconfirmPass" ForeColor="Red" Font-Names="Arial"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="Txtpassword" ControlToValidate="TxtconfirmPass" ErrorMessage="no match" class="expression" Font-Names="Arial" ForeColor="Red"></asp:CompareValidator>
                     </td>
                     <td class="auto-style3"></td>
@@ -147,7 +148,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="submit" runat="server" Text="submit" class="button" Font-Names="Arial" Font-Size="Medium"/>
+                        <asp:Button ID="submit" runat="server" Text="submit" class="button" Font-Names="Arial" Font-Size="Medium" OnClick="submit_Click"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
