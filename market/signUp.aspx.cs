@@ -16,20 +16,34 @@ namespace market
         }
 
         protected void submit_Click(object sender, EventArgs e){
+
             //create connectoin object
             SqlConnection sql = new SqlConnection();
             sql.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True";
-          
-            string insert = string.Format("insert into member('{0}', '{1}', '{2}', '{3}')",TxtName.Text,TxtEmail.Text,TxtUserName.Text,Txtpassword.Text);
 
-            SqlCommand cmd = new SqlCommand(insert,sql);
+
+            //string insert = string.Format("insert into member('{0}', '{1}', '{2}', '{3}')",TxtName.Text,TxtEmail.Text,TxtUserName.Text,Txtpassword.Text);
+            string strInsert = "Insert Into member" +"values(" + TxtName.Text+"," +TxtEmail.Text+","+TxtUserName.Text+","+Txtpassword.Text+")";
+
+
+            SqlCommand cmd = new SqlCommand(strInsert,sql);
+            confirm.Text =  "yOoo how are u "+ TxtName.Text;
             
-            sql.Open();
+            
+            //try
+            //{
+                sql.Open();
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            sql.Close();
-           
+                sql.Close();
+            //}
+            //catch(SqlException error) {
+                //if(error.Number == 2627)
+                //{
+                    
+                //}
+           // }
         }
     }
 }

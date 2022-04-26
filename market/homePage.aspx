@@ -169,7 +169,7 @@
                             </tr>
                             <tr>
                                 <td class="card">
-                                    <asp:ImageButton ID="ImageButton2" runat="server" Height="221px" ImageUrl="image\k.jfif" Width="343px" CssClass="card" />
+                                    <asp:ImageButton ID="ImageButton2" runat="server" Height="221px" ImageUrl="image\k.jfif" Width="343px" CssClass="card" OnClick="ImageButton2_Click" />
                                 </td>
                                 <td class="auto-style36">&nbsp;</td>
                                 <td class="auto-style36">
