@@ -27,23 +27,19 @@ namespace market
 
 
             SqlCommand cmd = new SqlCommand(strInsert,sql);
-            confirm.Text =  "yOoo how are u "+ TxtName.Text;
-            
-            
-            //try
-            //{
+     
+            try
+            {
                 sql.Open();
 
                 cmd.ExecuteNonQuery();
 
                 sql.Close();
-            //}
-            //catch(SqlException error) {
-                //if(error.Number == 2627)
-                //{
-                    
-                //}
-           // }
+            }
+            catch(Exception error) {
+                   
+            }
+            confirm.Text = "yOoo how are u " + TxtName.Text;
         }
     }
 }
