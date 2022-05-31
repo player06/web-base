@@ -22,11 +22,11 @@ namespace market
             sql.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True";
 
 
-            //string insert = string.Format("insert into member('{0}', '{1}', '{2}', '{3}')",TxtName.Text,TxtEmail.Text,TxtUserName.Text,Txtpassword.Text);
-            string strInsert = "Insert Into member" +"values(" + TxtName.Text+"," +TxtEmail.Text+","+TxtUserName.Text+","+Txtpassword.Text+")";
+            string insert = string.Format("insert into member (name, email, userName, password) values ('{0}', '{1}', '{2}', '{3}')",TxtName.Text,TxtEmail.Text,TxtUserName.Text,Txtpassword.Text);
+            //string strInsert = "Insert Into member" +"values (" + TxtName.Text+"," +TxtEmail.Text+","+TxtUserName.Text+","+Txtpassword.Text+")";
 
 
-            SqlCommand cmd = new SqlCommand(strInsert,sql);
+            SqlCommand cmd = new SqlCommand(insert,sql);
      
             try
             {
@@ -35,11 +35,12 @@ namespace market
                 cmd.ExecuteNonQuery();
 
                 sql.Close();
-            }
-            catch(Exception error) {
-                   
-            }
             confirm.Text = "yOoo how are u " + TxtName.Text;
+            }
+            catch (Exception err) {
+                error.Text = err.Message;
+            }
+            
         }
     }
 }
