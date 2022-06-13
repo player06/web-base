@@ -35,12 +35,18 @@ namespace market
                 cmd.ExecuteNonQuery();
 
                 sql.Close();
-            confirm.Text = "yOoo how are u " + TxtName.Text;
+
+                if (pic.HasFile)
+                {
+                    pic.SaveAs(Server.MapPath("userPic" + "\\" + TxtUserName.Text + ".jpg"));
+                }
+            
             }
             catch (Exception err) {
                 error.Text = err.Message;
             }
-            
+            confirm.Text = "yOoo how are u " + TxtName.Text;
+
         }
     }
 }
