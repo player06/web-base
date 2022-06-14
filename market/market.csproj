@@ -76,6 +76,8 @@
     <Content Include="signUp.aspx" />
     <Content Include="userHome.aspx" />
     <Content Include="Web.config" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="Booking.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="homePage.aspx.cs">
@@ -113,6 +115,20 @@
     </Compile>
     <Compile Include="userHome.aspx.designer.cs">
       <DependentUpon>userHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
