@@ -48,32 +48,39 @@ namespace market
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True";
 
-            String select = "select * from member " + "where userName = " + "'" +TxtUserName.Text +"'"
-                + "and password = " + "'" + TxtPass.Text + "'";
+            String select = "select * from member where " + "userName = " + "'" + TxtUserName.Text + "'"
+                + " and" + " password = " + "'" + TxtPass.Text + "'";
 
-            SqlCommand cmd = new SqlCommand(select,connection);
-
+            SqlCommand cmd = new SqlCommand(select, connection);
             SqlDataReader reader;
-
             try {
-
                 connection.Open();
                 reader = cmd.ExecuteReader();
-                if (reader.Read()){
 
+                if (reader.Read()) {
+
+                    String emil = (string) reader.GetValue(2);
                     HttpCookie cookie = new HttpCookie("pro");
                     cookie.Values.Add("name",TxtUserName.Text);
                     cookie.Values.Add("password",TxtPass.Text);
-                    
+                    cookie.Values.Add("emil",emil);
+
                     cookie.Expires = DateTime.Now.AddDays(1);
                     Response.Cookies.Add(cookie);
 
-                    Response.Redirect("~/userHome.aspx");
+                    if (TxtUserName.Text == "sameh20") {
+                        Response.Redirect("~/admin.aspx");
+                    }
+                    else { Response.Redirect("~/userHome.aspx"); }
+
                 }
-                
-           
+                else {
+
+                    gg.Text = " created suc";
+                }
+
                 connection.Close();
-            } 
+            }
             catch (Exception error) {
                 gg.Text = error.Message;
             }

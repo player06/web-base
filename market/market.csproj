@@ -75,11 +75,20 @@
     <Content Include="logIn.aspx" />
     <Content Include="signUp.aspx" />
     <Content Include="userHome.aspx" />
+    <Content Include="users.aspx" />
     <Content Include="Web.config" />
     <Content Include="MyAccount.aspx" />
     <Content Include="Booking.aspx" />
+    <Content Include="admin.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="homePage.aspx.cs">
       <DependentUpon>homePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,8 +139,23 @@
     <Compile Include="Booking.aspx.designer.cs">
       <DependentUpon>Booking.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.Master" />
     <None Include="packages.config" />
     <Content Include="user.Master" />
     <None Include="Web.Debug.config">

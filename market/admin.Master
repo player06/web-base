@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="market.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 193px;
+        }
+        .auto-style3 {
+            height: 193px;
+            width: 101px;
+        }
+        .auto-style6 {
+            height: 32px;
+        }
+        .auto-style8 {
+            height: 138px;
+        }
+        .auto-style9 {
+            height: 142px;
+        }
+        .auto-style10 {
+            height: 26px;
+        }
+        .auto-style11 {
+            height: 26px;
+            width: 273px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Image ID="Image" runat="server" Height="199px" Width="195px" />
+                    </td>
+                    <td class="auto-style2">
+                        <asp:Label ID="msg" runat="server"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" colspan="2">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style11">
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin.aspx">Admin page</asp:HyperLink>
+                                </td>
+                                <td class="auto-style10">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/users.aspx">users</asp:HyperLink>
+                                </td>
+                                <td class="auto-style10">
+                                    <asp:HyperLink ID="HyperLink3" runat="server">Admin page</asp:HyperLink>
+                                </td>
+                                <td class="auto-style10">
+                                    <asp:HyperLink ID="HyperLink4" runat="server">Admin page</asp:HyperLink>
+                                </td>
+                                <td class="auto-style10"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style9" colspan="2" style="vertical-align: top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" colspan="2">Footer</td>
+                </tr>
+            </table>
+            <br />
+        </div>
+    </form>
+</body>
+</html>
