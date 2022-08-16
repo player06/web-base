@@ -7,6 +7,8 @@
         .auto-style9 {
             width: 335px;
         }
+        
+        
         .auto-style10 {
             height: 26px;
             width: 335px;
