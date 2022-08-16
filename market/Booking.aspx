@@ -7,6 +7,8 @@
         }
     </style>
 </asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Booking Page !"></asp:Label>
     <br />
